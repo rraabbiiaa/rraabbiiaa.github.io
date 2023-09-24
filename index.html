@@ -1,105 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>rraabbiiaa</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div class="menübar">
-            <div class="logo">
-               <img src="top-menu.png" alt="logo">
-            </div>
-            <div class="başlık">
-                <h1>ONLİNE HESAPLAYICI </h1>
-            </div>
-            <div class="linkler">
-                <p><a href="#">ANASAYFA</a></p>
-                <p><a href="#">İÇERİKLER</a></p>
-                <p><a href="#">İLETİŞİM</a></p>
-            </div>
-        </div>
-        <hr>
-        <div class="phonk">
-        <table >
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="ad">ADINIZ:</label>
-                    </td>
-                    <td style="width: 2px;"></td>
-                    <td><input type="text" id="ad" placeholder="adınızı giriniz"></td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="yas">YAŞINIZ:</label>
-                    </td>
-                    <td style="width: 8px;"></td>
-                    <td>
-                        <input type="text" id="yas" placeholder="yaşınızı giriniz">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="sifre">ŞİFRENİZ:</label>
-                    </td>
-                    <td style="width: 8px;"></td>
-                    <td>
-                        <input type="password" id="sifre" placeholder="şifrenizi giriniz">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="mail">E-POSTA:</label>
-                    </td>
-                    <td style="width: 8px;"></td>
-                    <td>
-                        <input type="email" id="mail" placeholder="e-postanızı giriniz">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="ay">DOĞUM AYI:</label>
-                    </td>
-                    <td style="width: 8px;"></td>
-                    <td>
-                       <select id="ay">
-                        <option>ocak</option>
-                        <option>şubat</option>
-                        <option>mart</option>
-                        <option>nisan</option>
-                        <option>mayıs</option>
-                        <option>haziran</option>
-                        <option>temmuz</option>
-                        <option>ağustos</option>
-                        <option>eylül</option>
-                        <option>ekim</option>
-                        <option>kasım</option>
-                        <option>aralık</option>
-                       </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <label for="cinsiyet">CİNSİYETİNİZ:</label>
-                    </td>
-                    <td style="width: 2px;"></td>
-                    <td>
-                        <input type="radio" name="cinsiyet" >kadın 
-                        <input type="radio" name="cinsiyet" >erkek 
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td ><button type="reset">sil</button></td>
-                    <td>
-                        <button type="submit">kaydet</button>                 
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LEkhKtxFIE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Örnek Web Sayfası</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('arka_plan_resmi.jpg'); /* Arkaplan resmi burada ayarlanır */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Menü arkaplan rengi burada ayarlanır */
+        }
+
+        header img {
+            max-width: 100px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .section {
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.8); /* Bölüm arkaplan rengi burada ayarlanır */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo"> <!-- Logo burada eklenir -->
+        <nav>
+            <ul>
+                <li><a href="#bolum1">Bölüm 1</a></li>
+                <li><a href="#bolum2">Bölüm 2</a></li>
+                <li><a href="#bolum3">Bölüm 3</a></li>
+                <li><a href="#bolum4">Bölüm 4</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section" id="bolum1">
+        <!-- Bölüm 1 içeriği burada yer alır -->
+    </div>
+
+    <div class="section" id="bolum2">
+        <!-- Bölüm 2 içeriği burada yer alır -->
+    </div>
+
+    <div class="section" id="bolum3">
+        <!-- Bölüm 3 içeriği burada yer alır -->
+    </div>
+
+    <div class="section" id="bolum4">
+        <!-- Bölüm 4 içeriği burada yer alır -->
+    </div>
+</body>
 </html>
