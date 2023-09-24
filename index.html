@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Örnek Web Sayfası</title>
+    <title>Rabia Özdemir</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-image: url('arka_plan_resmi.jpg'); /* Arkaplan resmi burada ayarlanır */
+            background-image: url('wp1.png'); /* Arkaplan resmi burada ayarlanır */
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -44,36 +44,131 @@
             padding: 40px;
             background-color: rgba(255, 255, 255, 0.8); /* Bölüm arkaplan rengi burada ayarlanır */
             margin: 20px;
+            
         }
+        .yanyana {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .yanyana div {
+            display: inline-block;
+            width: 45%; /* İsterseniz bu genişliği ayarlayabilirsiniz */
+            margin-right: 20px; /* İsterseniz bu boşluğu ayarlayabilirsiniz */
+            text-align: left; /* İçeriği solda hizalamak için */
+        }
+        .egitim-kaydi {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .egitim-bilgisi {
+            flex: 1;
+        }
+
+        .egitim-cizgi {
+            flex: 0 0 2px; /* Çizginin genişliği */
+            height: 50px; /* Çizginin yüksekliği */
+            background-color: #333;
+            margin: 0 20px;
+        }
+
+        .egitim-yil {
+                    flex: 0 0 80px; /* Yıl bölümünün genişliği */
+                    text-align: center;
+        }
+        #CONTACT {
+            text-align: center; /* Başlığı ortala */
+            padding-bottom: 20px;
+        }
+
+        .contact-images {
+            display: flex; /* Resimleri yanyana düzenlemek için Flexbox kullan */
+            justify-content: center; /* Resimleri yatayda ortala */
+        }
+
+        .contact-images img {
+            height: 50px;
+            margin: 0 10px; /* Resimler arasında 10px boşluk bırak */
+        }
+        
+
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo"> <!-- Logo burada eklenir -->
+        <div style="display: flex; align-items: center;">
+            <img src="r.png" alt="Logo" style="max-width: 100px; height: auto;">
+            <h1 style="text-transform: uppercase; margin-left: 10px;color:azure">MY PORTFOLİO</h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="#bolum1">Bölüm 1</a></li>
-                <li><a href="#bolum2">Bölüm 2</a></li>
-                <li><a href="#bolum3">Bölüm 3</a></li>
-                <li><a href="#bolum4">Bölüm 4</a></li>
+                <li><a href="#EDUCATİON">EDUCATİON</a></li>
+                <li><a href="#PROJECT">PROJECT</a></li>
+                <li><a href="#EXPERİENCE">EXPERIENCE</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
             </ul>
         </nav>
     </header>
+    <div class="yanyana">
+        <div>
+            <!-- İlk yanyana div öğesi burada yer alacak -->
+            <img src="me.jpg" alt="resim" style="width: 500px; height: 500px;padding: 20px;margin-bottom: 70px;margin-top: 50px;border-radius: 50%;">
 
-    <div class="section" id="bolum1">
-        <!-- Bölüm 1 içeriği burada yer alır -->
+        </div>
+        <div>
+            <!-- İkinci yanyana div öğesi burada yer alacak -->
+            <p style="color: aliceblue;margin-top: 200px; font-size: 80px;">Rabia ÖZDEMİR</p>
+            <p style="color: aliceblue; font-size: 30px;"><i>Welcome to my portfolio...</i></p>
+        </div>
     </div>
 
-    <div class="section" id="bolum2">
-        <!-- Bölüm 2 içeriği burada yer alır -->
+    <div class="section" id="EDUCATİON">
+            <h2 style="text-align: center;">EDUCATİON</h2>
+            <div class="egitim-kaydi">
+                <div class="egitim-bilgisi" style="margin-left: 150px;">
+                    <h3>Bandırma Onyedi Eylül Üniversitesi</h3>
+                    <p>Balıkesir/Bandrıma</p>
+                </div>
+                <div class="egitim-cizgi"></div>
+                <div class="egitim-yil" style="margin-right: 200px;">
+                    <p>2022/Halen </p>
+                </div>
+            </div>
+            
+            <div class="egitim-kaydi">
+                <div class="egitim-bilgisi" style="margin-left: 150px;">
+                    <h3>Ağrı Hüseyin Celal Yardımcı Fen Lisesi</h3>
+                    <p>Ağrı/Merkez</p>
+                </div>
+                <div class="egitim-cizgi"></div>
+                <div class="egitim-yil" style="margin-right: 200px;">
+                    <p>2017/2021</p>
+                </div>
+            </div>
     </div>
 
-    <div class="section" id="bolum3">
-        <!-- Bölüm 3 içeriği burada yer alır -->
+    <div class="section" id="PROJECT">
+            <h2 style="text-align: center;">PROJECT</h2>
+            <p>İlk bölümünüzün içeriği burada yer alacak. Eğitimle ilgili bilgileri bu paragraf içerisinde ekleyebilirsiniz.</p>
+            <p>Örnek metinlerle devam edebilir veya istediğiniz bilgileri ekleyebilirsiniz.</p>
     </div>
 
-    <div class="section" id="bolum4">
-        <!-- Bölüm 4 içeriği burada yer alır -->
+    <div class="section" id="EXPERIENCE">
+            <h2 style="text-align: center;">EXPERIENCE</h2>
+            
     </div>
+    <div class="section" id="CONTACT">
+        <h2 style="padding-bottom: 20px;">CONTACT</h2>
+        
+        <!-- Resimlerin olduğu bölüm -->
+        <div class="contact-images">
+            <img src="linkedin.png" alt="linkedin" style="height: 50px;">
+            <img src="github.png" alt="github" style="height: 50px;">
+            <img src="discord.png" alt="discord" style="height: 50px;">
+        </div>
+    </div>
+    
 </body>
 </html>
