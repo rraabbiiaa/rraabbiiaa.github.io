@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="r.png" type="image/png">
     <title>Rabia Özdemir</title>
+    <link rel="icon" href="r.png" type="image/png">
     <style>
          @media screen and (max-width: 600px) {
-            /* Örneğin, mobil cihazlar için yazı tipi boyutlarını küçültebilirsiniz */
             body {
                 font-size: 14px;
             }
@@ -15,7 +14,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('wp1.png'); /* Arkaplan resmi burada ayarlanır */
+            background-image: url('wp1.png'); 
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -25,7 +24,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Menü arkaplan rengi burada ayarlanır */
+            background-color: rgba(0, 0, 0, 0.5); 
         }
 
         header img {
@@ -49,7 +48,7 @@
 
         .section {
             padding: 40px;
-            background-color: rgba(255, 255, 255, 0.8); /* Bölüm arkaplan rengi burada ayarlanır */
+            background-color: rgba(255, 255, 255, 0.651); 
             margin: 20px;
             
         }
@@ -60,9 +59,9 @@
 
         .yanyana div {
             display: inline-block;
-            width: 45%; /* İsterseniz bu genişliği ayarlayabilirsiniz */
-            margin-right: 20px; /* İsterseniz bu boşluğu ayarlayabilirsiniz */
-            text-align: left; /* İçeriği solda hizalamak için */
+            width: 45%; 
+            margin-right: 20px; 
+            text-align: left; 
         }
         .egitim-kaydi {
             display: flex;
@@ -75,29 +74,49 @@
         }
 
         .egitim-cizgi {
-            flex: 0 0 2px; /* Çizginin genişliği */
-            height: 50px; /* Çizginin yüksekliği */
+            flex: 0 0 2px;
+            height: 50px; 
             background-color: #333;
             margin: 0 20px;
         }
 
         .egitim-yil {
-                    flex: 0 0 80px; /* Yıl bölümünün genişliği */
+                    flex: 0 0 80px; 
                     text-align: center;
         }
         #CONTACT {
-            text-align: center; /* Başlığı ortala */
+            text-align: center; 
             padding-bottom: 20px;
         }
 
         .contact-images {
-            display: flex; /* Resimleri yanyana düzenlemek için Flexbox kullan */
+            display: flex; 
             justify-content: center; /* Resimleri yatayda ortala */
         }
 
         .contact-images img {
             height: 50px;
             margin: 0 10px; /* Resimler arasında 10px boşluk bırak */
+        }
+        .experience {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .experience-info,
+        .skills-info {
+            flex: 1;
+        }
+
+        .experience-info h3,
+        .skills-info h3 {
+            text-align: center;
+        }
+
+        .experience-info p,
+        .skills-info p {
+            margin: 5px 0;
         }
         
 
@@ -106,26 +125,25 @@
 <body>
     <header>
         <div style="display: flex; align-items: center;">
-            <img src="r.png" alt="Logo" style="max-width: 100px; height: auto;">
-            <h1 style="text-transform: uppercase; margin-left: 10px;color:azure">MY PORTFOLİO</h1>
+            <img src="r.png" alt="Logo" style="max-width: 80px; height: auto; padding: 10px;">
+            
         </div>
         <nav>
             <ul>
-                <li><a href="#EDUCATİON">EDUCATİON</a></li>
-                <li><a href="#PROJECT">PROJECT</a></li>
-                <li><a href="#EXPERİENCE">EXPERIENCE</a></li>
-                <li><a href="#CONTACT">CONTACT</a></li>
+                <li style="margin-right: 120px; margin-top: 25px;"><a href="#EDUCATİON">EDUCATİON</a></li>
+                <li style="margin-right: 120px;margin-top: 25px;"><a href="#PROJECT">PROJECT</a></li>
+                <li style="margin-right: 120px;margin-top: 25px;"><a href="#EXPERİENCE">EXPERIENCE</a></li>
+                <li style="margin-right: 100px;margin-top: 25px;"><a href="#CONTACT">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <div class="yanyana">
         <div>
-            <!-- İlk yanyana div öğesi burada yer alacak -->
+            
             <img src="me.jpg" alt="resim" style="width: 500px; height: 500px;padding: 20px;margin-bottom: 70px;margin-top: 50px;border-radius: 50%;">
 
         </div>
         <div>
-            <!-- İkinci yanyana div öğesi burada yer alacak -->
             <p style="color: aliceblue;margin-top: 200px; font-size: 80px;">Rabia ÖZDEMİR</p>
             <p style="color: aliceblue; font-size: 30px;"><i>Welcome to my portfolio...</i></p>
         </div>
@@ -136,6 +154,7 @@
             <div class="egitim-kaydi">
                 <div class="egitim-bilgisi" style="margin-left: 150px;">
                     <h3>Bandırma Onyedi Eylül Üniversitesi</h3>
+                    <p>BİLGİSAYAR MÜHENDİSLİĞİ  GNO: (3.18)</p>
                     <p>Balıkesir/Bandrıma</p>
                 </div>
                 <div class="egitim-cizgi"></div>
@@ -156,24 +175,46 @@
             </div>
     </div>
 
-    <div class="section" id="PROJECT">
-            <h2 style="text-align: center;">PROJECT</h2>
-            <p>yakında yazarım</p>
+    <div style="text-align: center;" class="section" id="PROJECT">
+            <h2 >PROJECT</h2>
+            <h3>TEKNOFEST Tarımsal İnsansız Kara Aracı Yarışması</h3>
+            <p>Manyas GM-IEEE BANU</p>
+            <p>Traih:2024</p>
+            <p>Araç Adı: NATIKAY</p>
             
     </div>
 
     <div class="section" id="EXPERIENCE">
             <h2 style="text-align: center;">EXPERIENCE</h2>
+            <div class="experience">
+                <div class="experience-info">
+                    <h3>Deneyimler</h3>
+                    <h4 style="text-align: center;">TAZOF Zeka Oyunları Finali</h4>
+                    <p style="text-align: center;padding-bottom: 30px;">Zeka oyunları yarışmalarına katıldım. Ve çeşitli konularda başarılı olarak sertifika kazandım.</p>
+                    <h4 style="text-align: center;">Harvard Business School Online Liderlik Kursu</h4>
+                    <p style="text-align: center;padding-bottom: 30px;">AMCAT testinden sonra kabul alarak girdiğim bir eğitimdi.Dördüncü aşamaya kadar ilerleyerek sertfifika almaya hak kazandım.</p>
+                    <h4 style="text-align: center;">IEEE BANU Educational Aktivities Komite Başkanlığı</h4>
+                    <p style="text-align: center;padding-bottom: 30px;">Bir topluluğa bağlı olarak kendi ekibim ile lisans öncesi öğrenciler başta olmak üzere her yaş grubuna gelişim etkinlikleri düzenledim.</p>
+                    <h4 style="text-align: center;">IEEE BANU Başkan Yardımcılığı</h4>
+                    <p style="text-align: center;">Bir topluluğun yönetim kurulunda çalışmaktayım.</p>
+                </div>
+                <div class="skills-info">
+                    <h3>Yetenekler</h3>
+                    <p style="text-align: center;padding-bottom: 100px;">Takım çalışması,Karmaşık Problemlere Çözüm Üretme</p>
+                    <p style="text-align: center;padding-bottom: 100px;">Liderlik, Görev Bilinci</p>
+                    <p style="text-align: center; padding-bottom: 110px;">Ekip Yönetimi,Liderlik,E-tablo ve drive kullanımı</p>
+                    <p style="text-align: center; padding-bottom: 50px;">Liderlik,Planlama,Denetim</p>
+                </div>
+            </div>
             
     </div>
     <div class="section" id="CONTACT">
         <h2 style="padding-bottom: 20px;">CONTACT</h2>
         
-        <!-- Resimlerin olduğu bölüm -->
         <div class="contact-images">
-            <img src="linkedin.png" alt="linkedin" style="height: 50px;">
-            <img src="github.png" alt="github" style="height: 50px;">
-            <img src="discord.png" alt="discord" style="height: 50px;">
+            <a href="https://www.linkedin.com/in/rabia-ozdemir-/"><img src="linkedin.png" alt="linkedin" style="height: 50px; margin-right: 240px;"></a>
+            <a href="https://github.com/rraabbiiaa"><img src="github.png" alt="github" style="height: 50px; margin-right: 240px;"></a>
+            <a href="https://discord.com/channels/@makisekurissu"><img src="discord.png" alt="discord" style="height: 50px;"></a>
         </div>
     </div>
     
